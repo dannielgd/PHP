@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <title>BINGO</title>
+        <script>
+            var cartela = new Array(new Array(), new Array(), new Array(), new Array(), new Array());
+            function aB() {
+                cartela[0].push(1);
+                cartela[0].push(2);
+            }
+            function aI() {
+                cartela[1].push(16);
+                cartela[1].push(17);
+            }
+            function aN() {
+                cartela[2].push(31);
+                cartela[2].push(32);
+            }
+            function aG() {
+                cartela[3].push(46);
+                cartela[3].push(47);
+            }
+            function aO() {
+                cartela[4].push(61);
+                cartela[4].push(62);
+            }
+            function imprimir() {
+                console.table(cartela);
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>B</th>
+                <th>B</th>
+                <th>I</th>
+                <th>I</th>
+                <th>N</th>
+                <th>N</th>
+                <th>G</th>
+                <th>G</th>
+                <th>O</th>
+                <th>O</th>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="aB(1);" /></td>
+                <td><input type="button" value="2" onclick="aB(2);" /></td>
+            </tr>
+        </table>
+        <input type="button" value="Adicionar no B" onclick="aB();"  />
+        <input type="button" value="Adicionar no I" onclick="aI();"  />
+        <input type="button" value="Adicionar no N" onclick="aN();"  />
+        <input type="button" value="Adicionar no G" onclick="aG();" />
+        <input type="button" value="Adicionar no O" onclick="aO();"  />
+        <input type="button" value="Imprime Cartela" onclick="imprimir();"  />
+
+    </body>
+</html>
