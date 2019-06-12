@@ -1,6 +1,6 @@
 <?php include('config.php'); ?>
 <!DOCTYPE html>
-<html class="no-js">
+<html>
     <head>
         <title>Projeto 01</title>
 		<link href="<?php echo INCLUDE_PATH; ?>estilo/all.css" rel="stylesheet">
@@ -8,13 +8,14 @@
         <link href="<?php echo INCLUDE_PATH; ?>estilo/style.css" rel="stylesheet">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="pavaras-chae,do,meu,site" />
+        <meta name="keywords" content="palavras-chave,do,meu,site" />
         <meta name="description" content="Descrição do meu website" />
 		<link rel="icon" href="<?php echo INCLUDE_PATH; ?>favicon.ico" type="image/x-icon" />
     </head>
     <body>
 		<base base="<?php echo INCLUDE_PATH; ?>" />
 		<?php
+        
 			$url = isset($_GET['url']) ? $_GET['url'] : 'home';
 			switch ($url) {
 				case 'depoimentos':

@@ -4,7 +4,7 @@
     }
 ?>
 <!DOCTYPE html>
-<html class="no-js">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    
     <div class="menu">
         <div class="menu-wrapper">
             <div class="box-usuario">
@@ -76,34 +77,7 @@
     </header>
 
     <div class="content">
-        <div class="box-content left w100">
-            <h2><i class="fas fa-home"></i> Painel de Controle - <?php  ?></h2>
-
-            <div class="box-metricas">
-                <div class="box-metrica-single">
-                    <div class="box-metrica-wraper">
-                        <h2>Usuários Online</h2>
-                        <p><?php echo 10 ?></p>
-                    </div><!--box-metrica-wraper-->
-                </div><!--box-metrica-single-->
-                <div class="box-metrica-single">
-                    <div class="box-metrica-wraper">
-                        <h2>Total de Visitas</h2>
-                        <p><?php echo 10 ?></p>
-                    </div><!--box-metrica-wraper-->
-                </div><!--box-metrica-single-->
-                <div class="box-metrica-single">
-                    <div class="box-metrica-wraper">
-                        <h2>Visitas Hoje</h2>
-                        <p><?php echo 10 ?></p>
-                    </div><!--box-metrica-wraper-->
-                </div><!--box-metrica-single-->
-                <div class="clear"></div>
-            </div><!--box-metricas-->
-        </div><!-- box ocntent -->
-
-
-        <div class="clear" />
+        <?php Painel::carregarPagina(); ?>
     </div><!-- content -->
 
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
