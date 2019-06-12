@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     
     var open = true;
     var windowSize = $(window)[0].innerWidth;
@@ -11,7 +11,6 @@ $(function() {
     }
     
     $('.menu-btn').click(function() {
-        console.log(open);
          if(open) {
              $('.menu').animate({width : '0', padding : '0'}, function() {
                  open = false;
@@ -45,7 +44,7 @@ $(function() {
             open = false;
         } else {
             open = true;
-            $('.content, header').css({width : 'calc(100% - 250px)'}).css({left : '0'});
+            $('.content, header').css({width : 'calc(100% - 250px)'}).css({left : '250px'});
             $('.menu').css({width : '100%'}).css({padding : '10px 0'});
         }
     })

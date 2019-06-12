@@ -40,23 +40,24 @@
 
             <div class="itens-menu">
                 <h2>Cadastro</h2>
-                <a <?php selecionadoMenu('cadastrar-depoimento'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar Depoimento</a>
-                <a <?php selecionadoMenu('cadastrar-servico'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-servico">Cadastrar Serviço</a>
-                <a <?php selecionadoMenu('cadastrar-slides'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-slides">Cadastrar Slides</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar Depoimento</a>
+                <a <?php ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-servico">Cadastrar Serviço</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-slides">Cadastrar Slides</a>
                 <h2>Gestão</h2>
-                <a <?php selecionadoMenu('listar-depoimentos'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-depoimentos">Listar Depoimentos</a>
-                <a <?php selecionadoMenu('listar-servicos'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-servicos">Listar Serviços</a>
-                <a <?php selecionadoMenu('listar-slides'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-slides">Listar Slides</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-depoimentos">Listar Depoimentos</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-servicos">Listar Serviços</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-slides">Listar Slides</a>
                 <h2>Administração do painel</h2>
-                <a <?php selecionadoMenu('editar-usuario'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
-                <a <?php selecionadoMenu('adicionar-usuario'); ?> <?php verificaPermissaoMenu(2); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuário</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
+                <a <?php  ?> <?php ?> href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuário</a>
                 <h2>Configuração Geral</h2>
-                <a <?php selecionadoMenu('editar-site'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>editar-site">Editar Site</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>editar-site">Editar Site</a>
                 <h2>Gestão de Notícias</h2>
-                <a <?php selecionadoMenu('cadastrar-categorias'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-categorias">Cadastrar Categorias</a>
-                <a <?php selecionadoMenu('gerenciar-categorias'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-categorias">Gerenciar Categorias</a>
-                <a <?php selecionadoMenu('cadastrar-noticia'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-noticia">Cadastrar Notícias</a>
-                <a <?php selecionadoMenu('gerenciar-noticias'); ?> href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-noticias">Gerenciar Notícias</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-categorias">Cadastrar Categorias</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-categorias">Gerenciar Categorias</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-noticia">Cadastrar Notícias</a>
+                <a <?php ?> href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-noticias">Gerenciar Notícias</a>
+                
             </div>
             <!--itens-menu-->
         </div><!-- menu-wrapper -->
@@ -76,25 +77,25 @@
 
     <div class="content">
         <div class="box-content left w100">
-            <h2><i class="fas fa-home"></i> Painel de Controle - <?php echo NOME_EMPRESA ?></h2>
+            <h2><i class="fas fa-home"></i> Painel de Controle - <?php  ?></h2>
 
             <div class="box-metricas">
                 <div class="box-metrica-single">
                     <div class="box-metrica-wraper">
                         <h2>Usuários Online</h2>
-                        <p><?php echo count($usuariosOnline); ?></p>
+                        <p><?php echo 10 ?></p>
                     </div><!--box-metrica-wraper-->
                 </div><!--box-metrica-single-->
                 <div class="box-metrica-single">
                     <div class="box-metrica-wraper">
                         <h2>Total de Visitas</h2>
-                        <p><?php echo $pegarVisitasTotais; ?></p>
+                        <p><?php echo 10 ?></p>
                     </div><!--box-metrica-wraper-->
                 </div><!--box-metrica-single-->
                 <div class="box-metrica-single">
                     <div class="box-metrica-wraper">
                         <h2>Visitas Hoje</h2>
-                        <p><?php echo $pegarVisitasHoje; ?></p>
+                        <p><?php echo 10 ?></p>
                     </div><!--box-metrica-wraper-->
                 </div><!--box-metrica-single-->
                 <div class="clear"></div>

@@ -71,7 +71,7 @@ body {
 
 .clear{ clear: both;}
 
-.center{ max-width: 1280px; padding: 0 2%; margin: 0 auto;}
+.center{padding: 0 2%; margin: 0 auto;}
 
 
 
@@ -263,6 +263,13 @@ div .box-usuario {
 .box-metrica-wraper p{
 	padding: 10px 0;
 	font-size: 26px;
+}
+
+@media screen and (max-width: 1200px){
+	.box-metrica-single{
+		width: 100%;
+        min-height: 200px;
+	}
 }
 
 @media screen and (max-width: 1024px){
