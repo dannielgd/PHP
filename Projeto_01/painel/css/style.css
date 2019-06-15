@@ -224,7 +224,7 @@ div .box-usuario {
 .box-content {
     background: white;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 /*Box Metricas*/
@@ -263,6 +263,31 @@ div .box-usuario {
 .box-metrica-wraper p{
 	padding: 10px 0;
 	font-size: 26px;
+}
+
+/* Tabela Responsiva */
+
+.table-responsive{
+	margin:20px auto;
+	font-weight: 300;
+}
+
+.table-responsive .row:nth-of-type(1){
+	font-weight: normal;
+	background: #00bfa5;
+	padding: 10px;
+	color: white;
+}
+
+.table-responsive .row{
+	color: #777;
+	padding: 8px;
+	border-bottom: 1px solid #ccc;
+}
+
+.col{
+	float: left;
+	width: 50%;
 }
 
 @media screen and (max-width: 1200px){

@@ -2,6 +2,11 @@
     if(isset($_GET['logout'])) {
         Painel::logout();
     }
+    
+    if(!isset($_SESSION)) {
+        header('Location: ' . 'index.php');
+        die();
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -41,7 +46,7 @@
 
             <div class="itens-menu">
                 <h2>Cadastro</h2>
-                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar Depoimento</a>
+                <a href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar Depoimento</a>
                 <a <?php ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-servico">Cadastrar Serviço</a>
                 <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-slides">Cadastrar Slides</a>
                 <h2>Gestão</h2>
@@ -69,6 +74,7 @@
                 <i class="fas fa-bars"></i>
             </div><!-- menu-btn -->
             <div class="logout">
+                <a <?php if(@$_GET['url'] == ''){ ?> style="background: #60727a;padding: 15px;" <?php } ?> href="<?php echo INCLUDE_PATH_PAINEL ?>"> <i class="fas fa-home"></i> <span>Página Inicial</span></a>
                 <a href="<?php echo INCLUDE_PATH_PAINEL ?>?logout"><i class="fas fa-sign-out-alt"><span> Sair</span></i></a>
             </div>
         </div>
