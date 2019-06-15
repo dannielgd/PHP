@@ -2,11 +2,6 @@
     if(isset($_GET['logout'])) {
         Painel::logout();
     }
-    
-    if(!isset($_SESSION)) {
-        header('Location: ' . 'index.php');
-        die();
-    }
 ?>
 <!DOCTYPE html>
 <html>
