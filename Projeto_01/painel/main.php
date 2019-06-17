@@ -50,7 +50,7 @@
                 <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-slides">Listar Slides</a>
                 <h2>Administração do painel</h2>
                 <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuário</a>
-                <a <?php  ?> <?php ?> href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuário</a>
+                <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuário</a>
                 <h2>Configuração Geral</h2>
                 <a <?php  ?> href="<?php echo INCLUDE_PATH_PAINEL ?>editar-site">Editar Site</a>
                 <h2>Gestão de Notícias</h2>
